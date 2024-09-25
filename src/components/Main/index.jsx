@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [countries, setCountries] = useState([]);
@@ -53,7 +54,6 @@ const Index = () => {
         setRegions(uniqueRegions);
         setCountries(response.data);
         setLoader(false);
-        console.log(response.data);
       })
       .catch((error) => {
         console.error(error);
@@ -137,7 +137,7 @@ const Index = () => {
         <div className="wrapper mt-12">
           {countries.map((el, index) => {
             return (
-              <a href="" key={index}>
+              <Link to={el?.cca2} key={index}>
                 <div className="card w-full rounded-[5px] shadow-lg hover:shadow-2xl duration-300 hover:cursor-pointer">
                   <div className="w-full h-[160px] border overflow-hidden">
                     <img
@@ -173,7 +173,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
