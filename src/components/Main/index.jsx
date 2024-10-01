@@ -137,7 +137,7 @@ const Index = () => {
         <div className="wrapper mt-12">
           {countries.map((el, index) => {
             return (
-              <Link to={el?.cca2} key={index}>
+              <Link to={`/country/${el?.cca2}`} key={index}>
                 <div className="card w-full rounded-[5px] shadow-lg hover:shadow-2xl duration-300 hover:cursor-pointer">
                   <div className="w-full h-[160px] border overflow-hidden">
                     <img
