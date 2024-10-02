@@ -1,14 +1,15 @@
 import React from 'react'
 import 'boxicons'
+import { Link } from 'react-router-dom'
 
 const index = () => {
     return (
         <header className='fixed top-0 w-full shadow-lg bg-white'>
             <div className="container">
                 <nav className='flex justify-between items-center py-6'>
-                    <a href='./index.html' className='text-[#111517] text-2xl font-extrabold '>
+                    <Link to='/' className='text-[#111517] text-2xl font-extrabold '>
                         Where in the world?
-                    </a>
+                    </Link>
 
                     <button className='flex items-center gap-3'>
                         <i className='bx bx-moon text-[#111517] text-xl'></i>
