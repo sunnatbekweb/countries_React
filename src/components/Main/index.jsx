@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Index = () => {
+const Home = () => {
   const [countries, setCountries] = useState([]);
   const [regions, setRegions] = useState([]);
   const [loader, setLoader] = useState(false);
@@ -182,4 +182,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;
