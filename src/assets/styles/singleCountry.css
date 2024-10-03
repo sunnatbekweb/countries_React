@@ -1,0 +1,20 @@
+main {
+  margin-top: 80px;
+  padding: 80px 0;
+}
+
+main section .container a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.29);
+  background: #fff;
+  transition: opacity 0.3s ease;
+}
+
+main section .container a:hover {
+    opacity: 0.7;
+}
