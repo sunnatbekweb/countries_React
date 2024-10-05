@@ -12,7 +12,9 @@ const SingleCountry = () => {
             <IoMdArrowBack />
             <span>Go back</span>
           </Link>
-          <div className="country-info"></div>
+          <div className="country-info">
+            <img src="" alt="" />
+          </div>
         </div>
       </section>
     </main>
