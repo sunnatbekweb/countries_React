@@ -4,6 +4,6 @@ export default {
   theme: {
     extend: {},
   },
+  darkMode: 'class',
   plugins: [],
-  darkMode: ["selector", '[data-mode="dark"]'],
 };
