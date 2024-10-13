@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaMoon, FaRegMoon } from "react-icons/fa";
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,7 +30,8 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode} className="text-[#111517] dark:text-white">
+    <button onClick={toggleDarkMode} className="text-[#111517] dark:text-white flex items-center gap-x-2">
+      {isDarkMode ? <FaMoon /> : <FaRegMoon />}
       {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>
   );
