@@ -29,8 +29,8 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode}>
-      {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+    <button onClick={toggleDarkMode} className="text-[#111517] dark:text-white">
+      {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>
   );
 };
