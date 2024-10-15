@@ -30,7 +30,10 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode} className="text-[#111517] dark:text-white flex items-center gap-x-2">
+    <button
+      onClick={toggleDarkMode}
+      className="text-[#111517] dark:text-white flex items-center gap-x-2"
+    >
       {isDarkMode ? <FaMoon /> : <FaRegMoon />}
       {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>

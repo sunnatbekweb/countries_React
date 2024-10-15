@@ -16,5 +16,9 @@ main section .container a {
 }
 
 main section .container a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
+}
+
+.country-info {
+  color: #111517;
 }
