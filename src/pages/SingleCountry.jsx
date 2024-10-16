@@ -40,7 +40,7 @@ const SingleCountry = () => {
             <div className="country-info mt-20 flex items-center gap-x-[40px]">
               <img
                 src={singleCountry.flags?.svg}
-                className="w-[500px]"
+                className="w-[500px] border"
                 alt="Country flag"
               />
 
@@ -98,11 +98,11 @@ const SingleCountry = () => {
                   </ul>
                 </div>
 
-                <div className="flex items-center gap-x-[15px]">
+                <div className="flex gap-x-[15px]">
                   <p className="text-base font-semibold leading-[150%]">
                     Border Countries:{" "}
                   </p>
-                  <ul className="flex gap-x-[10px]">
+                  <ul className="flex gap-x-[10px] flex-wrap">
                     {singleCountry?.borders
                       ? singleCountry?.borders?.map((country, index) => (
                           <li
