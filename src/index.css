@@ -69,6 +69,10 @@
 }
 
 @media screen and (max-width: 475px) {
+  .container {
+    padding: 0 10px;
+  }
+  
   .wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }

@@ -104,8 +104,8 @@ const Home = () => {
       </div>
 
       <div className="container">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center border max-w-[480px] py-4 rounded-[5px] px-8 shadow-lg border-none hover:shadow-2xl hover:cursor-text gap-6 duration-200 dark:bg-[#2B3844]">
+        <div className="flex flex-col gap-y-10 md:flex-row justify-between items-start md:items-center">
+          <div className="flex items-center border w-full md:max-w-[480px] py-4 rounded-[5px] px-8 shadow-lg border-none hover:shadow-2xl hover:cursor-text gap-6 duration-200 dark:bg-[#2B3844]">
             <i className="bx bx-search text-[#848484] dark:text-white text-lg"></i>
             <input
               onInput={handleInputChange}
@@ -117,7 +117,7 @@ const Home = () => {
           </div>
 
           <select
-            className="cursor-pointer px-6 py-4 shadow-md border hover:shadow-xl duration-200 dark:bg-[#2B3844] border-none dark:text-white focus:outline-none"
+            className="max-w-[200px] w-full cursor-pointer px-6 py-4 shadow-md border hover:shadow-xl duration-200 dark:bg-[#2B3844] border-none dark:text-white focus:outline-none"
             onChange={handleChange}
             value={selectedValue}
           >
