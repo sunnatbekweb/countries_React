@@ -22,3 +22,9 @@ main section .container a:hover {
 .country-info {
   color: #111517;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 40px 0;
+  }
+}
