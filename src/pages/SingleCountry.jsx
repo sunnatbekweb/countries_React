@@ -32,15 +32,15 @@ const SingleCountry = () => {
     <main>
       <section>
         <div className="container">
-          <Link to={"/"}>
+          <Link to={"/"} className="dark:bg-[#2b3844] dark:text-white">
             <IoMdArrowBack />
             <span className="text-sm md:text-base">Go back</span>
           </Link>
           {singleCountry ? (
-            <div className="country-info mt-16 lg:mt-20 flex flex-col lg:flex-row gap-y-12 lg:items-center gap-x-[40px]">
+            <div className="country-info mt-16 lg:mt-20 flex flex-col lg:flex-row gap-y-12 lg:items-center gap-x-[40px] text-[#111517] dark:text-white">
               <img
                 src={singleCountry.flags?.svg}
-                className="w-[500px] border"
+                className="w-[500px] border dark:border-transparent"
                 alt="Country flag"
               />
 
@@ -106,7 +106,7 @@ const SingleCountry = () => {
                     {singleCountry?.borders
                       ? singleCountry?.borders?.map((country, index) => (
                           <li
-                            className="px-6 py-1 shadow rounded-sm"
+                            className="px-6 py-1 shadow rounded-sm dark:bg-[#2b3844]"
                             key={index}
                           >
                             {country}
