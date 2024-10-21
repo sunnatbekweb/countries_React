@@ -34,10 +34,10 @@ const SingleCountry = () => {
         <div className="container">
           <Link to={"/"}>
             <IoMdArrowBack />
-            <span>Go back</span>
+            <span className="text-sm md:text-base">Go back</span>
           </Link>
           {singleCountry ? (
-            <div className="country-info mt-20 flex items-center gap-x-[40px]">
+            <div className="country-info mt-16 lg:mt-20 flex flex-col lg:flex-row gap-y-12 lg:items-center gap-x-[40px]">
               <img
                 src={singleCountry.flags?.svg}
                 className="w-[500px] border"
@@ -49,7 +49,7 @@ const SingleCountry = () => {
                   {singleCountry?.name?.common}
                 </h3>
 
-                <div className="flex gap-x-5 mb-16">
+                <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 mb-16">
                   <ul>
                     <li className="flex gap-x-2 text-base font-light leading-[200%]">
                       <strong className="font-semibold">Native Name:</strong>
